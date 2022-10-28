@@ -1,0 +1,548 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: #EDEDED ;
+    box-sizing: border-box;
+    
+}
+
+p {
+    color: gray;
+}
+
+hr {
+    margin-bottom: 8%;
+}
+
+
+
+
+/* Typograpghy */
+
+.main-title {
+    font-size: 1.5rem;
+    padding: 1em 0;
+}
+
+.button {
+    color: #fff;
+    border: none;
+    background-color: red;
+    border-radius: 7px;
+    padding: 0.3em;
+    
+
+}
+
+.filter-by-region {
+    font-size: .8rem;
+    /* padding: auto .5em; */
+    width: 10%;
+}
+
+.info-title {
+    margin-bottom: 0;
+    margin-top: 2em;
+    font-size: .75rem;
+}
+
+.region-info, .population-info, .area-info  {
+    margin-top: .5em ;
+    padding-bottom: 1em;
+}
+
+.info {
+    margin-top: 0;
+}
+
+
+
+/* Layout */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #EDEDED ;
+    border-bottom: 1px solid #000;
+}
+
+.dark-mode-icon {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 .75em;
+    font-size: 1.5em;
+    border: 0px;
+}   
+
+.navbar-title {
+    padding: 0 1em;
+}
+
+
+.main-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    background-color: #fff;
+    border-radius: 50px;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.fa-magnifying-glass {
+    font-size: 1.25em;
+    padding: 0 1.5em ;
+}
+
+
+.searchbar {
+    background-color: #fff;
+    width: 80%;
+    height: 2em;
+    border-radius: 50px;
+    padding: .5em 0;
+    font-size: 1.25em;
+    border: none;
+
+}
+
+.searchbar:focus {
+    outline: none;
+}
+
+
+
+.filter {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.buttons {
+    display: flex;
+    text-align: center;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.9em;
+}
+
+.filter-by-region {
+    width: 10%;
+    margin: auto 1.5em auto auto;
+}
+
+.country-count{
+    width: 10%;
+}
+
+.countries {
+    margin-top: 10%;
+    
+}
+
+.country {
+    margin: 4% auto;
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    border-radius: 15px;
+    width: 100%;
+    
+
+}
+
+.flag-and-title {
+    display: flex;
+    width: 20%;
+
+}
+
+.country-info {
+    display: flex;
+    width: 50%;
+    gap: 5%;
+    justify-content: center; 
+
+}
+
+.country-flag {
+    width: 95px;
+    height: 70px;
+    border-radius: 40px;
+    padding: 1.5rem;
+}
+
+.country-name {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: auto 0 auto 0.25em;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.country-name:hover {
+    color: rgb(24, 63, 136);
+    border-bottom: 1px solid rgb(24, 63, 136);
+    padding-bottom: .5em;
+}
+
+/* 
+
+    --> Info page:
+
+ */
+
+ .container {
+    
+    width: 55%;
+    margin: 0 auto;
+    align-items: center;
+ }
+
+ .general {
+    display: flex;
+    background: #ccc;
+    margin: 0 0 10% ;
+    /* height: 500px; */
+    width: 100%;
+    border-radius: 25px;
+    /* margin-bottom:  ; */
+
+ }
+
+ .title-for-info {
+    font-weight: 700;
+    margin-bottom: 1em;
+ }
+
+ .couuntry-details{
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(202, 198, 198);
+    margin-top: 10%;
+    gap: 15%;
+    
+ }
+
+ .flag-display {
+    /* background-color: #000; */
+    width: 30%;
+    height: 70%;
+    margin-top: 2%;
+    text-align: center;    
+    
+    
+ }
+
+ .info-flag {
+    width: 90%;
+    margin: 5% auto 0;
+    border-radius: 5px;
+    
+
+ }
+
+ .details {
+    /* background-color: #000; */
+    width: 60%;
+    height: 90%;
+    margin: 2% 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+ }
+
+ .region-div, .population-div, .area-div{
+    width: 15%;
+ }
+
+ .m{
+    width: 48%;
+    height: 100%;
+    /* background: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+ }
+
+ .sub {
+    /* background: red; */
+    width: 90%;
+    /* height: 10%; */
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+
+
+ }
+
+
+ .popular-cities {
+    
+    align-items: flex-start;
+    /* height: 1000px; */
+    background: #fff;
+
+ }
+
+ .popular-cities-sub1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* height: 100%; */
+    margin: 2% 10% 2% 5%; 
+    width: 48%;
+ }
+
+
+.city {
+    
+    border-radius: 15px;
+    display: flex;
+    border: solid 1px gray;
+    margin: 1.5em auto;
+    width: 100%;
+    
+    
+   
+
+ }
+.city-image {
+    width: 63px;
+    height: 63px;
+    border-radius: 100%;
+    margin: 1em ;
+    border: 1px  solid #000 ;
+    
+ }
+
+
+.neighbor-image {
+    width: 63px;
+    height: 43px;
+    margin: 1em;
+    border-radius: 8px;
+    border: #000 solid 1px;
+
+ }
+
+
+.neighbor-info {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+
+}
+
+.neighbor-info-d-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.neighbor-info-d {
+    display: flex;
+    /* justify-content: space-around; */
+    /* height: 100%; */
+    width: 35%;
+    border-radius: 3px;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+
+
+}
+
+
+.israel {
+    display: none;
+}
+
+.purple {
+    background-color: rgb(165, 78, 165);
+}
+
+.light-purple {
+    background-color:rgb(214, 108, 124)
+}
+
+.light-blue {
+    background-color:rgb(168, 224, 243);
+}
+
+.europe {
+    background-color: rgb(55, 142, 192);
+}
+
+.all {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000;
+    font-weight: 900;
+}
+
+.africa {
+    background-color: rgb(247, 250, 52);
+
+}
+
+.america {
+    background-color: rgb(209, 33, 33);
+
+}
+
+.oceania {
+    background-color: rgb(33, 209, 33);
+
+}
+
+.polar { 
+    background-color: rgb(154, 221, 218);
+
+}
+
+.asia { 
+    background-color: rgb(211, 125, 26);
+
+}
+
+ /* Typography */
+
+ .detail-title {
+    font-size: 1rem;
+    margin: .3em 1em 0 1em;
+    padding: 0;
+    color: #777;
+    font-weight: 300;
+    
+ }
+
+ .detail-info {
+    margin: 0 1em;
+    padding: 0 0 1em;
+    color: #000;
+    font-weight: 600;
+
+ }
+
+ .info-title-2 {
+    color: #000;
+    font-size: 2em;
+    margin-top: .3em;
+    padding: 0;
+ }
+
+ .city-name {
+    color: #000;
+    font-size: 1.3rem;
+    margin: 1em 0 0;
+    padding: 0;
+ }
+
+.city-score { 
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0 .5em;
+}
+
+.neighbor-name {
+    font-size: 1.5rem;
+    margin: 1em 0 0.5em;
+}
+
+.neighbor-info-title {
+ margin: 0;
+ padding: 0;
+ font-size: 0.5em;
+ 
+}
+
+.neighbor-info-p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
+    
+}
+
+
+
+
+@media (max-width: 950px) {
+    .main-content  {
+        width: 90%;
+    }
+
+    .country {
+        flex-direction: column;
+    }
+    
+    .country-info {
+        width: 100%;
+    }
+
+    .flag-and-title {
+        width: 100%;
+        justify-content: center;
+    }
+    body {
+        background: #000;
+    }
+
+    .general {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .couuntry-details {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    .popular-cities-sub1 {
+        width: 90%;
+    }
+    
+    .city {
+        /* align-items: center; */
+        justify-content: space-evenly;
+    }
+
+    .city-image{
+        margin: 1em 1em 1em;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .flag-display {
+        width: 65%;
+        text-align: center;
+    }
+
+    
+    }
